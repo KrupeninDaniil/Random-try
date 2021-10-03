@@ -1,0 +1,118 @@
+* {
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0;
+	font-family: 'Reggae One', cursive;
+	background-color: black;
+	color: #cccccc;
+}
+body {
+	height: 100vh;
+	overflow-x: hidden;
+}
+.header__top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 10em;
+	box-sizing: border-box;
+}
+.header__top_image {
+	padding: 0 40%;
+}
+.header__bottom_list {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	background: none;
+}
+
+.menu__link {
+	padding: 1em;
+}
+.main__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+.main__body_elem {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	align-items: center;
+	flex: 30%;
+	border: 3px solid darkred;
+	background: none;
+}
+.main__body_elem > a {
+	border-radius: 10px;
+}
+#BtnLink {
+	font-size: 1em;
+	width: 8em;
+	height: 3em;
+	border: 2px solid;
+	border-color: red darkred;
+	box-sizing: border-box;
+	animation: pulsate 1.2s linear infinite;
+	box-shadow: 0 3px darkred,
+			3px 4px 40px red,
+			inset 0 1px rgba(255,255,255,.3),
+			inset 0 0 3px rgba(255,255,255,.5);
+	transition: .2s;
+	border-radius: 10px;
+}
+
+@keyframes pulsate {
+	50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+@-webkit-keyframes pulsate {
+	50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+#BtnLink:hover {
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+	cursor: pointer;
+}
+#BtnLink:active {
+	box-shadow: 0 4px darkred,
+	0 2px 20px darkred,
+	inset 0 1px rgba(255, 255, 255, .3),
+	inset 0 0 3px rgba(255, 255, 255, .5);
+	-webkit-transform: translate(0, 4px);
+	transform: translate(0, 4px);
+}
+#OrderArt {
+	min-height: 90vh;
+	background-image: url("../images/orderArt.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 3em;
+}
+#Donuts {
+	min-height: 90vh;
+	background-image: url("../images/donats.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 3em;
+}
+#comLib {
+	min-height: 90vh;
+	background-image: url("../images/comLib.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 3em;
+}
+.main__body_elem span {
+	background: none;
+	font-size: 24px;
+	color: white;
+	text-shadow: 2px 2px 2px red, 0 0 2em white;
+}

@@ -1,0 +1,59 @@
+* {
+	list-style-type: none;
+	margin: 0;
+	font-family: 'Reggae One', cursive;
+	background-color: black;
+}
+.header__top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 10em;
+}
+.header__top_image {
+	padding: 0 45%;
+}
+.comics {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+	padding-left: 3em;
+	padding-right: 3em;
+}
+.comics__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border: thick double darkred;
+	color: darkred;
+}
+
+.comics__list:hover {
+	box-shadow: 10px 5px 5px red;
+	transform: translate(0, 4px);
+}
+.comics__list_header {
+	position: relative;
+	flex-grow: 2;
+}
+.comics__list_button-open {
+	position: absolute;
+	bottom: 0.5em;
+	right: 0.5em;
+	max-width: 80px;
+	min-width: 80px;
+}
+.comics__list_logo-item {
+	width: 250px;
+	height: 250px;
+	padding-right: 1em;
+}
+.comics__list_header h3 {
+	text-align: center;
+	padding-bottom: 1em;
+	color: white;
+}
+.comics__list_header span {
+	padding-left: 1em;
+}

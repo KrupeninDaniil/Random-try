@@ -1,0 +1,109 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    font-family: 'Reggae One', cursive;
+    background-color: black;
+}
+i {
+    background: none;
+}
+.header__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10em;
+}
+.header__top_image {
+    padding: 0 40%;
+}
+.comics__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding: 1em 2em 1em 2em;
+    border: 2px solid darkred;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 30px  darkred;
+
+}
+.comics__container_item img {
+    height: 480px;
+    width: 320px;
+    padding-top: 0.5em;
+    cursor: pointer;
+}
+#close {
+    display: none;
+}
+#open {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#btn-next {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#btn-prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+#btn-prev, #btn-next {
+    display: flex;
+    height: 100%;
+    width: 50px;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+#btn-next:hover, #btn-prev:hover {
+    opacity: 0.6;
+}
+.fullscreen__container_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.fullscreen__container_image.active {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.fullscreen__container_image.active > img {
+    width: 769px;
+    height: 935px;
+    object-fit: contain;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
+}
+.fullscreen__container_image > img {
+    width: 769px;
+    height: 935px;
+    object-fit: contain;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
